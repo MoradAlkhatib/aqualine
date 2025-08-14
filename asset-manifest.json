@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aqualine/static/css/main.3912229e.css",
+    "main.js": "/aqualine/static/js/main.237ff043.js",
+    "static/js/453.89829ded.chunk.js": "/aqualine/static/js/453.89829ded.chunk.js",
+    "index.html": "/aqualine/index.html",
+    "main.3912229e.css.map": "/aqualine/static/css/main.3912229e.css.map",
+    "main.237ff043.js.map": "/aqualine/static/js/main.237ff043.js.map",
+    "453.89829ded.chunk.js.map": "/aqualine/static/js/453.89829ded.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3912229e.css",
+    "static/js/main.237ff043.js"
+  ]
+}
