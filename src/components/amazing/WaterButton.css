@@ -1,0 +1,53 @@
+.water-button {
+  position: relative;
+  overflow: hidden;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #0077be;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(0, 119, 190, 0.4);
+  transition: transform 0.2s ease;
+  margin-left: 20px;
+}
+
+.water-button:hover {
+  transform: scale(1.05);
+}
+
+.water-button .button-text {
+  position: relative;
+  z-index: 2;
+}
+
+.water-button .water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(180deg, #00aaff 0%, #0044aa 100%);
+  border-radius: 40%;
+  animation: wave 3s linear infinite;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes wave {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Drain effect when clicked */
+.water-button.drain .water {
+  animation: drain 2s forwards;
+}
+
+@keyframes drain {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}

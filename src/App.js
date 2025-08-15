@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import FormPage from './components/FormPage.js';
 import Login from './components/home/Login.js';
 import Signup from './components/home/Signup.jsx';
-
+import WaterPage from "../src/components/amazing/WaterPage.jsx";
 function App() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
@@ -15,6 +15,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/form" element={<FormPage />} />
           <Route path="/login" element={<Login />} />
+           <Route path="/water-page" element={<WaterPage />} />
       <Route path="/signup" element={<Signup />} />
     </Routes>
     // <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
